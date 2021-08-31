@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User Details</title>
+</head>
+<body>
+	<h3>User Details</h3>
+	<hr>
+	<form action="UserDetailsServlet" method="post">
+		<table>
+			<tr>
+				<td>User Id</td>
+				<td><input type="text" name="txtUserId"></td>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="txtUserName"></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><input type="radio" name="rdoGender" value="Male">
+					Male <br> <input type="radio" name="rdoGender" value="Female">
+					Female</td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><textarea rows="10" cols="30" name="txaAddress"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>Qualification</td>
+				<td><select name="ddlQualification">
+						<option value="S.S.C">S.S.C</option>
+						<option value="H.S.C">H.S.C</option>
+						<option value="Graduate">Graduate</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Languages Know</td>
+				<td><input type="checkbox" name="ckbLanguage" value="Hindi">Hindi <br> 
+				<input type="checkbox" name="ckbLanguage" value="Marathi"> Marathi <br> 
+				<input type="checkbox" name="ckbLanguage" value="English"> English <br> 
+				<input type="checkbox" name="ckbLanguage" value="other"> Other <br>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Submit"></td>
+				<td><input type="reset" value="clear"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
