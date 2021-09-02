@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- <bean id="address" class="com.citibank.model.Address" -->
+	<!-- scope="prototype"> -->
+	<!-- <property name="house" value="B-212" /> -->
+	<!-- <property name="buildingName" value="Nisarg CHS" /> -->
+	<!-- <property name="street" value="AB Road" /> -->
+	<!-- <property name="city" value="Mumbai" /> -->
+	<!-- <property name="state" value="Maharashtra" /> -->
+	<!-- <property name="pin" value="400012" /> -->
+	<!-- <property name="country" value="India" /> -->
+	<!-- </bean> -->
+
+	<!-- <bean id="employee" class="com.citibank.model.Employee" -->
+	<!-- scope="prototype"> -->
+	<!-- <property name="employeeId" value="101" /> -->
+	<!-- <property name="name" value="Vivek" /> -->
+	<!-- <property name="salary" value="1000" /> -->
+	<!-- <property name="residentialAddress" ref="address" /> -->
+	<!-- </bean> -->
+
+	<!--  <bean id="address" class="com.citibank.model.Address">
+		<constructor-arg name="house" value="" />
+		<constructor-arg name="building" value="" />
+		<constructor-arg name="street" value="" />
+		<constructor-arg name="city" value="" />
+		<constructor-arg name="state" value="" />
+		<constructor-arg name="pincode" value="0" />
+		<constructor-arg name="country" value="" />
+	</bean>
+	
+	<bean id="employee" class="com.citibank.model.Employee">
+		<constructor-arg name="employeeId" value="0"/>
+		<constructor-arg name="name" value=""/>
+		<constructor-arg name="salary" value="0"/>
+		<constructor-arg name="residentialAddress" ref="address"/>
+	</bean> -->
+	
+	
+	<bean id="residentialAddress" class="com.citibank.model.Address">
+	</bean>
+	
+	<bean id="employee" class="com.citibank.model.Employee" autowire="byName">
+	</bean>
+	
+</beans>
